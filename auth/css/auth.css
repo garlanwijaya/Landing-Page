@@ -1,0 +1,404 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: -o-linear-gradient(
+    315deg,
+    var(--color-bg1),
+    var(--color-bg2),
+    var(--color-bg1)
+  );
+  background: linear-gradient(
+    135deg,
+    var(--color-bg1),
+    var(--color-bg2),
+    var(--color-bg1)
+  );
+  background-size: 200% 200%;
+  -webkit-animation: bg-animation 10s infinite;
+          animation: bg-animation 10s infinite;
+}
+
+:root {
+  --color-bg1: rgb(132, 17, 190);
+  --color-bg2: rgb(10, 25, 84);
+  --color1: rgb(18, 113, 255);
+  --color2: rgb(221, 74, 255);
+  --color3: rgb(100, 220, 255);
+  --color4: rgb(200, 50, 50);
+  --color5: rgb(180, 180, 50);
+  --color-interactive: rgb(140, 100, 255);
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-orient: vertical;  
+  -webkit-box-direction: normal;  
+      -ms-flex-direction: column;  
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 90px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.signup-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.login-header svg {
+  margin-left: 25px;
+  color: #000000;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.signup-header svg {
+  margin-left: 25px;
+  color: #000000;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+svg:hover {
+  color: #777777;
+}
+
+.login-account {
+  color: #000000;
+  border-bottom: rgb(255, 0, 81) 3px solid;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.signup-account {
+  color: #000000;
+  font-size: 22px;
+  border-bottom: rgb(255, 0, 81) 3px solid;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.username.form-group, .password.form-group {
+  margin: 10px 0;
+}
+
+label {
+  color: #000000;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.username input {
+  padding: 10px;
+  padding-right: 75px;
+  padding-left: 30px;
+  background: url(/auth/images/user-regular.svg) no-repeat left;
+  background-size: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-interactive);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.password input {
+  padding: 10px;
+  padding-right: 75px;
+  padding-left: 30px;
+  background: url("/auth/images/key.svg") no-repeat left;
+  background-size: 19px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-interactive);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.text p {
+  color: #000000;
+  text-align: justify;
+  margin: 5px 25px 25px 25px;
+  font-size: 12px;
+
+}
+.email input {
+  padding: 10px;
+  padding-right: 75px;
+  padding-left: 30px;
+  background: url("/auth/images/envelope.svg") no-repeat left;
+  background-size: 19px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-interactive);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color1);
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-interactive);
+}
+
+input::-moz-placeholder {
+  color: var(--color-interactive);
+}
+
+input:-ms-input-placeholder {
+  color: var(--color-interactive);
+}
+
+input::-ms-input-placeholder {
+  color: var(--color-interactive);
+}
+
+input::placeholder {
+  color: var(--color-interactive);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+          box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-text-fill-color: var(--color-interactive) !important;
+  padding-left: 5px;
+  padding-right: 100px;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+          box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-text-fill-color: var(--color1) !important;
+}
+.requested {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.requested .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px;
+}
+.requested .remember-me input {
+  margin-right: 5px;
+}
+.requested a {
+  text-decoration: none;
+  color: var(--color1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.requested a:hover {
+  color: var(--color3);
+  
+}
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--color1)), color-stop(var(--color3)), to(var(--color1)));
+  background: -o-linear-gradient(left, var(--color1), var(--color3), var(--color1));
+  background: linear-gradient(90deg, var(--color1), var(--color3), var(--color1));
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.other-auth {
+  margin: 20px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.other-auth .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.other-auth .social-media i {
+  font-size: 32px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.other-auth .social-media i:hover {
+  font-size: 40px;
+}
+
+.signup-method {
+  margin: 10px 0;
+}
+.signup-method p {
+  color: #ffffff;
+}
+.signup-method a {
+  padding-left: 5px;
+  color: var(--color1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.signup-method a:hover {
+  color: var(--color3);
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

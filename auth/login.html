@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/x-icon" href="#" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/login" method="post" class="auth-form login-form">
+        <div class="card">
+          <div class="login-header">
+            <a href="/index.html">
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+            </a>
+            <h2 class="login-account">Login</h2>
+          </div>
+          <div class="username form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="username"
+              required
+            />
+          </div>
+          <div class="password form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+            <div class="requested">
+              <div class="remember-me">
+                <input type="checkbox"><p>remember me</p>
+              </div>
+              <a href="/auth/forpass.html"><p>Forgot password?</p></a>
+            </div>
+          </div>
+          <button type="submit">Login</button>
+          <div class="other-auth">
+            <p>Or Sign Up Using</p>
+            <div class="social-media">
+              <i class="ph ph-google-logo"></i>
+              <i class="ph ph-facebook-logo"></i>
+              <i class="ph ph-x-logo"></i>
+            </div>
+          </div>
+        </div>
+        <div class="signup-method">
+          <p>
+            Don't Have any Account?
+            <a href="/auth/signup.html">Sign up and get started!</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
