@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="container">
-      <form action="/forpass" method="post" class="auth-form forpass-form">
+      <form action="/conf-pass" method="post" class="auth-form conf-pass-form">
         <div class="card">
-          <div class="forpass-header">
-            <a href="/auth/login.html">
+          <div class="conf-pass-header">
+            <a href="/auth/forpass.html">
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"
@@ -32,23 +32,31 @@
                 />
               </svg>
             </a>
-            <h2 class="forpass-account">Forgot Password</h2>
+            <h2 class="conf-pass-account">Confirm Password</h2>
           </div>
-          <div class="forpass form-group">
-            <div class="email form-group">
-              <label for="email">Email *</label>
+          <div class="conf-pass form-group">
+            <div class="password form-group">
+              <label for="password">Password</label>
               <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="email"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
                 required
               />
             </div>
-            <a href="/auth/conf-pass.html">
-              <button type="submit">Reset Password</button>
-            </a>
+            <div class="password form-group">
+              <label for="password">Confirm Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="confirm password"
+                required
+              />
+            </div>
           </div>
+          <button type="submit">Continue &rarr;</button>
         </div>
       </form>
     </div>

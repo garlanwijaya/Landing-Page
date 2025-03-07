@@ -126,6 +126,17 @@ form {
   width: 100%;
   margin-bottom: 25px;
 }
+.conf-pass-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 25px;
+}
 
 .login-header svg {
   margin-left: 25px;
@@ -142,6 +153,13 @@ form {
   transition: color 0.3s;
 }
 .forpass-header svg {
+  margin-left: 25px;
+  color: #000000;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.conf-pass-header svg {
   margin-left: 25px;
   color: #000000;
   -webkit-transition: color 0.3s;
@@ -170,6 +188,14 @@ svg:hover {
   text-align: center;
 }
 .forpass-account {
+  color: #000000;
+  font-size: 22px;
+  border-bottom: rgb(255, 0, 81) 3px solid;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+.conf-pass-account {
   color: #000000;
   font-size: 22px;
   border-bottom: rgb(255, 0, 81) 3px solid;
