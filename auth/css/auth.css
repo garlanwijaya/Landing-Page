@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +43,13 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+img {
+  width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
 }
 
 form {
@@ -445,6 +445,18 @@ button:hover {
 }
 .signup-method a:hover {
   color: var(--color3);
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 75%;
+  }
+  .auth-form {
+    width: 100%;
+  }
+  .auth-form form {
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes bg-animation {
